@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+
+    <title></title>
+  </head>
+  <body>
+<div class="wrapper">
+  <div class="sidebar"></div>
+  <div class="statistiche_wrapper"></div>
+
+</div>
+
+<script id="playercode_template" type="text/x-handlebars-template">
+ <div class="code_area">{{codiceplayer}}</div>
+</script>
+
+<script id="statistiche_template" type="text/x-handlebars-template">
+ <div class="statistiche">
+  <ul>
+    <li>codice_Giocatore: {{code}} </li>
+    <li>punti_Segnati:{{score}} </li>
+    <li>num_Rimbalzi: {{bounce}}</li>
+    <li>falli: {{fault}}</li>
+    <li>successo_duePunti: {{shots2}}</li>
+    <li>successo_trePunti: {{shots3}}</li>
+  </ul>
+ </div>
+</script>
+
+
+
+
+
+
+
+
+
+
+  <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
